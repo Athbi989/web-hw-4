@@ -4,31 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>حاسبة الدرجات 🎓🎓</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./assets/styles.css" />
   </head>
   <body>
     <div class="wrapper">
-      <h1>الحاسبة 🔢</h1>
+      <div class="card" style="display: block" id="homePanel">
+        <h1>الحاسبة</h1>
 
-      <div class="directions">أدخل درجاتك، كل درجة في الحقل الخاص بها</div>
+        <div class="directions">أدخل درجاتك، كل درجة في الحقل الخاص بها</div>
+        <label class="tip-info">في حال تود ان تحسب اكثر من درجة قم بالفصل بينهم بفاصلة</label>
+        <input id="Grades" class="textInput" type="text" placeholder="درجاتك" />
 
-      <input id="Quizes" type="text" />
-      <input id="Midterm" type="text" />
-      <input id="FinalTest" type="text" />
-      <input id="Oral" type="text" />
+        <input id="submitButton" class="buttonInput" type="button" value="إحسب" onClick="Magic()" />
+        <!-- 
+        <p>مجموع درجاتك (بالأرقام) هو</p>
+        <div id="total_grades"></div>
 
-      <input
-        id="submitButton"
-        type="button"
-        value="calculate"
-        onClick="submit()"
-      />
+        <p>درجتك النهائية هي (بالأحرف)</p>
+        <div id="final_grade"></div> -->
+      </div>
 
-      <p>مجموع درجاتك (بالأرقام) هو</p>
-      <div id="total_grades"></div>
+      <div class="card" id="watingPanel" style="display: none">
+        <h1>....قاعد احسب لك</h1>
+        <img src="./assets/animatedCal.gif" alt="" srcset="" />
+      </div>
 
-      <p>درجتك النهائية هي (بالأحرف)</p>
-      <div id="final_grade"></div>
+      <div class="card" style="display: none; width: 550px" id="resultPanel">
+        <h1>النتائج</h1>
+        <div class="container" id="resultDom"></div>
+        <input id="submitButton" class="buttonInput" type="button" value="العودة للصفحة الرئيسية" onClick="backtoMain()" />
+      </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

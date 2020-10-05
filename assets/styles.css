@@ -1,0 +1,105 @@
+/* 🎓 تحت هذا التعليق أتحفونا بتصاميمكم التي تليق بقدر حاسبة الدرجات */
+
+/* Main Adjustments */
+* {
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: mainFont;
+  src: url(Almarai-Light.ttf);
+}
+
+body {
+  font-family: mainFont;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #282828;
+}
+
+/* Centerd Card */
+
+.card {
+  width: 395px;
+  text-align: center;
+  color: white;
+  background: #161616b3;
+  box-shadow: 2px 6px 4px -1px rgb(0 0 0 / 3%), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 18px;
+  padding: 10px;
+  margin: auto;
+}
+
+/* Result Sections classes */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.result {
+  border: 1px solid #d9cece14;
+  padding: 10px;
+  margin-left: 15px;
+  margin-top: 15px;
+  border-radius: 18px;
+}
+
+.result .t1 {
+  font-size: 26px;
+  padding: 5px;
+}
+
+.result img {
+  width: 105px;
+  height: 97px;
+  border-radius: 50%;
+}
+/* Input style */
+
+.textInput {
+  font-family: mainFont;
+  margin: 15px 0;
+  padding: 15px 10px;
+  width: 75%;
+  outline: none;
+  border: 1px solid #bbbbbb1c;
+  border-radius: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: 0.2s ease all;
+  text-align: center;
+  background: #282828;
+  color: white;
+}
+
+.buttonInput {
+  cursor: pointer;
+  font-family: mainFont;
+  margin: 15px 0;
+  padding: 15px 10px;
+  width: 75%;
+  outline: none;
+  border: 1px solid #bbbbbb1c;
+  border-radius: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: 0.2s ease all;
+  text-align: center;
+  background: #282828;
+  color: white;
+}
+
+.buttonInput:hover {
+  box-shadow: 2px 6px 4px -1px rgb(0 0 0 / 3%), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+/* other styles */
+
+.tip-info {
+  font-size: 12px;
+  color: #6c6c6c;
+}
